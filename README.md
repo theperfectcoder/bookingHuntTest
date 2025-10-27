@@ -34,3 +34,9 @@
    ```bash
    php artisan test --filter=Hunting\\BookingTest
    ```
+
+## Интеграция в BookingCore
+- Вынесите файлы в `Modules/Hunting/*` и зарегистрируйте `ServiceProvider`.
+- Доменный юзкейс — `CreateBookingAction`.
+- События интеграции: диспатч `BookingCreated` после успешного бронирования (при необходимости).
+
