@@ -18,7 +18,11 @@ final class Guide extends Model
     use HasFactory;
 
     /** @var string[] */
-    protected $fillable = ['name', 'experience_years', 'is_active'];
+    protected $fillable = [
+        'name',
+        'experience_years',
+        'is_active'
+    ];
 
     /** @var array<string, string> */
     protected $casts = [

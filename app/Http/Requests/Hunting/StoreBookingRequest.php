@@ -28,7 +28,7 @@ final class StoreBookingRequest extends FormRequest
             'hunter_name' => ['required', 'string', 'max:255'],
             'guide_id' => ['required', 'integer', 'exists:guides,id'],
             'date' => ['required', 'date_format:Y-m-d'],
-            'participants_count' => ['required', 'integer', 'between:1,10'],
+            'participants_count' => ['required', 'integer', 'between:1,10']
         ];
     }
 }
