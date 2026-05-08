@@ -22,18 +22,18 @@ final class HuntingBooking extends Model
 
     /** @var string[] */
     protected $fillable = [
-        'tour_name',
-        'hunter_name',
-        'guide_id',
-        'date',
         'participants_count',
+        'hunter_name',
+        'tour_name',
+        'guide_id',
+        'date'
     ];
 
     /** @var array<string, string> */
     protected $casts = [
-        'date' => 'date',
         'participants_count' => 'integer',
         'guide_id' => 'integer',
+        'date' => 'date',
     ];
 
     /**
